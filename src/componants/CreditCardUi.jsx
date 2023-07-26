@@ -10,7 +10,7 @@ function CreditCardUi({setPayment, movie}) {
   
   function handleSubmit(e) {
     e.preventDefault()
-    alert(`${name} your Ticket is succsefully booked in ${city}`)
+    alert(`Hi ${name} your Ticket is succsefully booked in ${city} City`)
     setPayment(false)
     console.log(paymentObj)
   }
