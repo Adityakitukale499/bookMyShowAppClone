@@ -34,6 +34,7 @@ const LogIn = () => {
                 // console.log('Login success')
                 ok = true
                 setName(users[i].name)
+                localStorage.setItem("name", JSON.stringify(users[i].name))
                 break;
             }
             else {
