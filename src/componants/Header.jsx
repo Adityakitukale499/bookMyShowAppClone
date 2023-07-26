@@ -86,7 +86,7 @@ const Header = ({ setStatus }) => {
                     >
                         <button className="header_btn" onClick={() => navigate("/")}>
                             <i className="fa-solid fa-right-from-bracket"></i>
-                            <p className='btn_content'>{name ? name.split(' ')[0] : 'login'}</p>
+                            <p className='btn_content'>{name ? name.split(' ')[0] : JSON.parse(localStorage.name).split(' ')[0]}</p>
                         </button>
                     </OverlayTrigger>
                     <button className="header_btn" onClick={() => NowPlayingMovies()}>
