@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    margin: -16px -28px !important;
+}
+.modal_left_side{
+    width: 50%;
+}
+.modal_right_side{
+    width: 50%;
+    padding: 20px;
+}
+.modal_left_side > img{
+    width: 100%;
+    border-bottom-left-radius: 5px;
+}
+.bookBtn{
+    position: absolute;
+    bottom: 15px;
+    right:15px;
+    padding: 5px 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: rgb(18, 134, 180);
+    color: white;
+    font-weight: 600;
+}
+.bookBtn:hover{
+    background-color: rgb(3, 133, 184);
+    box-shadow: 5px 5px 5px dimgray;
+}
+@media screen and (max-width: 1000px) {
+    .container{
+        display: block !important;
+        margin: 0 !important;
+    }
+    .modal_left_side{
+        width: 100%;
+    }
+    .modal_right_side{
+        width: 100%;
+    }
+}

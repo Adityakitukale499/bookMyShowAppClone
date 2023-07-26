@@ -1,0 +1,65 @@
+.container{
+    display: flex;
+    /* margin: -16px -28px !important; */
+}
+.paymentModalHeader{
+    background-color: rgba(191, 172, 153, 0.842);
+}
+.paymentModalBody{
+     background-color: rgba(204, 201, 151, 0.301);
+} 
+.modal_left_side{
+    width: 50%;
+    padding: 20px;
+}
+.modal_left_side >p{
+    font-size: 19px;
+    font-weight: 500;
+}
+.modal_left_side >p>input{
+    font-size: 19px;
+    width: 20%;
+    border-radius: 10px;
+}
+.modal_left_side >p>span{
+    background-color: #fff;
+    padding: 5px;
+    font-size: 22px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.modal_right_side{
+    width: 50%;
+    padding: 20px;
+}
+
+.bookBtn{
+    position: absolute;
+    bottom: 15px;
+    right:15px;
+    padding: 5px 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: rgb(18, 134, 180);
+    color: white;
+    font-weight: 600;
+}
+.bookBtn:hover{
+    background-color: rgb(3, 133, 184);
+    box-shadow: 5px 5px 5px dimgray;
+}
+form{
+    margin-top: 10px;
+}
+@media screen and (max-width: 1000px) {
+    .container{
+        display: block !important;
+        margin: 0 !important;
+    }
+    .modal_left_side{
+        width: 100%;
+    }
+    .modal_right_side{
+        width: 100%;
+    }
+}

@@ -1,0 +1,21 @@
+.card-text{
+    display: flex;
+    justify-content: space-between;
+}
+.row{
+     margin: 20px !important; 
+}
+.card{
+    transition: 0.5s;
+    /* background-color: aqua; */
+    margin: 25px 0;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.body_container{
+    background-color: rgb(241, 240, 240);
+}
+/* .card:hover{
+    background-color: rgb(235, 182, 113);
+} */
