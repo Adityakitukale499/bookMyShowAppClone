@@ -57,6 +57,11 @@ const Header = ({ setStatus }) => {
 
     const handleShow = () => setShow(true);
 
+    const handleLogin = () =>{
+        localStorage.setItem("name", JSON.stringify("LogIn"))
+        navigate("/")
+    }
+    
     return (
         <>
             <div className='header'>
@@ -84,7 +89,7 @@ const Header = ({ setStatus }) => {
                             </Tooltip>
                         }
                     >
-                        <button className="header_btn" onClick={() => navigate("/")}>
+                        <button className="header_btn" onClick={handleLogin}>
                             <i className="fa-solid fa-right-from-bracket"></i>
                             <p className='btn_content'>{name ? name.split(' ')[0] : JSON.parse(localStorage.name).split(' ')[0]}</p>
                         </button>
