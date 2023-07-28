@@ -15,6 +15,7 @@ const LogIn = () => {
     }
 
     useEffect(() => {
+        localStorage.setItem("name", JSON.stringify('LogIn'))
         async function getData() {
             const data = await axios.get('https://bookmyshow-clone-backend-8h46.onrender.com/users')
             // console.log(data);
