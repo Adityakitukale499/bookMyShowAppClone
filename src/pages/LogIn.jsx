@@ -31,7 +31,7 @@ const LogIn = () => {
         // console.log(userData)
         for (let i in users) {
             if (users[i].email == userData.email && users[i].password == userData.password) {
-                // console.log('Login success')
+                console.log('Login success')
                 ok = true
                 setName(users[i].name)
                 localStorage.setItem("name", JSON.stringify(users[i].name))
